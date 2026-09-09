@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang ="ZH">
+<head>
+	<meta charset="UTF-8">
+	<title>A to Z for ANZ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main id="the-room">
+		<img class="bgImage" src="assets/scenario/bg-phase2.png">
+		<img class="chImage" id="p1" src="assets/scenario/pp-phase2.gif">
+
+
+
+        <img
+            class="interior"
+            src="assets/furnicture/C.png"
+            data-item="C"
+            id="ticket"
+        >
+
+        <img
+            class="interior"
+            src="assets/furnicture/G.png"
+            data-item="G"
+            id="iris"
+        > 
+        <img
+            class="interior"
+            src="assets/furnicture/H.png"
+            data-item="H"
+            id="we"
+        > 
+
+        <img
+            class="interior"
+            src="assets/furnicture/J.png"
+            data-item="J"
+            id="film"
+        > 
+        <img
+            class="interior"
+            src="assets/furnicture/N.png"
+            data-item="N"
+            id="long"
+        > 
+        <img
+            class="interior"
+            src="assets/furnicture/R.png"
+            data-item="R"
+            id="log"
+        > 
+
+
+           
+       
+                             
+	</main>
+
+	<div id="modalOverlay" class="modal-overlay">
+
+        <div id="quizModal" class="quiz-modal">
+
+            <img
+                id="modalBackground"
+                class="modal-background"                
+            >
+
+            <div class="modal-dark"></div>
+
+            <div class="modal-content">
+
+
+
+
+				<div id="questionArea">
+
+                    <div id ="itemImage" class = "item-image"></div>
+
+  			        <div id="questionStem" class="question-stem"></div>
+                    <!-- <div id="questionText" class="question-text"></div> -->
+
+			        <div class="answer-area">
+
+		              <input
+		            id="answerInput"
+        		    type="text"
+        		    maxlength="20"
+        		    autocomplete="off"
+            		placeholder="……">
+
+                    <button id="submitButton"><h3> 是这样吧</h3></button>
+                </div>
+
+		<button
+		    id="closeButton"
+		    class="close-button"
+		    aria-label="关闭">
+		    ×
+		</button>
+
+
+        <div id="hintArea" class="hint-area">
+
+            <div class="hint-label">
+
+            </div>
+
+            <div id="hintImage">
+            </div>
+
+
+        </div>
+
+
+
+        <button id="switchButton" class="switch-button">
+            
+        </button>
+
+
+    </div>
+
+</div>
+
+
+    <audio
+        id ="backgroundMusic2"
+        src="assets/music/phase2.mp3"
+        loop
+        preload="auto"
+    ></audio>
+
+
+</body>
+
+
+
+
+
+
+    <script src="sscript.js"></script>
+</html>

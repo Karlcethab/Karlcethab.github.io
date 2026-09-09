@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang ="ZH">
+<head>
+	<meta charset="UTF-8">
+	<title>A to Z for ANZ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css" /> -->
+
+</head>
+<body>
+	<main id="the-room">
+		<img class="bgImage" src="assets/scenario/bg-phase1.png">
+		<img class="chImage" id="p1" src="assets/scenario/pp-phase1.gif">
+
+		<img
+			class="interior"
+            src="assets/furnicture/A.png"
+            data-item="A"
+            id="mud"
+        >
+
+        <img
+			class="interior"
+            src="assets/furnicture/B.png"
+            data-item="B"
+            id="bead"
+        >
+		<img
+			class="interior"
+            src="assets/furnicture/C.png"
+            data-item="C"
+            id="ticket"
+        >
+        <img
+            class="interior"
+            src="assets/furnicture/D.png"
+            data-item="D"
+            id="poker"
+        >        
+
+		<img
+			class="interior"
+            src="assets/furnicture/E.png"
+            data-item="E"
+            id="air"
+        >
+		<img
+			class="interior"
+            src="assets/furnicture/F.png"
+            data-item="F"
+            id="book"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/G.png"
+            data-item="G"
+            id="iris"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/H.png"
+            data-item="H"
+            id="we"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/I.png"
+            data-item="I"
+            id="photo"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/J.png"
+            data-item="J"
+            id="film"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/N.png"
+            data-item="N"
+            id="long"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/R.png"
+            data-item="R"
+            id="log"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/S.png"
+            data-item="S"
+            id="spegetti"
+        > 
+		<img
+			class="interior"
+            src="assets/furnicture/T.png"
+            data-item="T"
+            id="yakult"
+        > 
+        <img
+            class="interior"
+            src="assets/furnicture/X.png"
+            data-item="X"
+            id="cosette"
+        >
+                             
+	</main>
+
+	<div id="modalOverlay" class="modal-overlay">
+
+        <div id="quizModal" class="quiz-modal">
+
+            <!-- 弹窗背景图 -->
+            <img
+                id="modalBackground"
+                class="modal-background"
+                src="assets/scenario/reserve.png"
+                alt="q-bg"
+            >
+
+            <!-- 半透明遮罩 -->
+            <div class="modal-dark"></div>
+
+            <!-- 弹窗内容 -->
+            <div class="modal-content">
+
+                <button
+                    id="closeButton"
+                    class="close-button"
+                    aria-label="关闭">×
+                </button>
+
+                <button id="switchButton" class="switch-button"></button>
+
+
+
+				<div id="questionArea">
+
+                    <div id ="itemImage" class = "item-image"></div>
+
+  			        <div id="questionStem" class="question-stem"></div>
+                    <div id="questionText" class="question-text"></div>
+
+			        <div class="answer-area">
+
+		              <input
+		            id="answerInput"
+        		    type="text"
+        		    maxlength="20"
+        		    autocomplete="off"
+            		placeholder="……">
+
+                    <button id="submitButton"><h3> 是这样吧</h3></button>
+                </div>
+
+
+
+		                <!-- 提示 -->
+        <div id="hintArea" class="hint-area">
+
+            <div class="hint-label">
+
+            </div>
+
+            <div id="hintImage">
+                        提示加载中……
+            </div>
+
+
+        </div>
+
+
+                <!-- 切换按钮 -->
+
+        <div id="result-text" class="result-text"></div>
+
+    </div>
+
+</div>
+
+
+    <audio
+        id="backgroundMusic1"
+        src="assets/music/phase1.mp3"
+        loop
+        preload="auto"
+    ></audio>
+</body>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
